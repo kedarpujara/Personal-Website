@@ -10,6 +10,13 @@
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css"></link>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Volkhov">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Droid+Sans">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Delicious">
+
 
 	<link rel="icon" style="height: 20px; width: 20px" href="pictures/kp.png">
 </head>
@@ -25,7 +32,7 @@
 	<!-- Navbar -->
 	<nav class="navbar navbar-inverse navbar-fixed-top" id ="my-navbar">
 		<div class="container">
-			<div class="navbar-header">
+			<div class="navbar-header" >
 
 				<button fg4type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
 					<span class="icon-bar"></span>
@@ -34,16 +41,18 @@
 					<span class="icon-bar"></span>
 				</button>
 
-				<a href="index.html" class="navbar-brand">KP HomePage</a><!--<img src="pictures/kp.png"/> </a> -->
+				<!--<a href="index.html" class="navbar-brand">KP HomePage</a> --><!--<img src="pictures/kp.png"/> </a> -->
 
 			</div> <!-- navbar header -->
-			<div class="collapse navbar-collapse" id="navbar-collapse">
+			<div class="collapse navbar-collapse" id="navbar-collapse" style="align-items: center; text-align: center;">
+				
 				<ul class="nav navbar-nav">
-					<!--
-					<li><a href="#AboutMe"><img style="height: 5% width: 5%" src="pictures/kp.png"/></a></li> -->
-					<li><a href="index.html">About Me</a></li>
+					<li><a href="index.html"><img src="pictures/kp2.png"></a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right navbar-inner" id = "nav-header-links">
 					<li><a href="#Projects">Projects</a></li>
-					<li><a href="#Extracirriculars">Extracirriculars</a></li>
+					<li><a href="#Extracirriculars">Extracirriculars</a></li>					
 					<li><a href="#ContactMe">Contact Me</a></li>
 					<li><a href="pictures/Resume.pdf" target="_blank">Resume</a>					
 				</ul>
@@ -63,99 +72,68 @@
 				<td>
 					<h2> About Me </h2>
 					<p>
-					Hey there! I'm Kedar, just a 21 year old boy trying to carve his path in life. I'm set to graduate this June with a degree in Computer Science with a Specialization in Bioinformatics from the University of California, San Diego. I've always been fascinated with computers and just find it simply amazing that computers are changing the way the world operates. I'm excited to see what the future has in store and even more excited to be able to contribute to this golden age of technology. 
+					Hey there! I'm Kedar,  a young man trying to carve his path in life. I'm set to graduate this June with a degree in Computer Science with a Specialization in Bioinformatics from the University of California, San Diego. I've always been fascinated with computers and just find it simply amazing that the world is changing computers are changing the way the world operates. I'm particularly interested in product development, machine learning, I'm excited to see what the future has in store and even more excited to be able to contribute to this golden age of technology. 
 					</p>					
 				</td>
 			</tr>
 		</table>
-		<!--
-			<div class="col-sm-1">
-				<img style="padding-left: 4px" src="pictures/profile.png" alt="Kedar"> 
-			</div>
-			<div class="com-sm-10">
-			<h1> About Me </h1>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. This is where my about me will go.
-			</p> -->
-			<!--
-			<div class="btn-group">
-				<a href="" class="btn btn-lg btn-warning">Download App</a>
-			</div>
-			-->
+	
 		</div>
-
+<hr id="Projects">
 	</div> <!--end of jumbotron -->
 
-	<!--
-	<div class="container">
-		<section>
-			<div class="page-header" id="AboutMe"></div>
-					
-		</section>
-	</div> --> <!-- end container -->
-
 
 	<div class="container">
 		<section>
-			<div class="page-header" id="Projects">
-				<h2>Projects</h2><small>Check out some of my projects that I am proud of.</small>
+			<div class="page-header" style="text-align: center;">
+				<h2>Projects</h2>
 			</div>
 
 			<div class="row">
-				<div class="col-lg-3">
-					<a href="https://github.com/kedarpujara/AudioShare"><img src="pictures/audioshare.png"></a>
-					<h2>AudioShare </h2>
+				<div class="col-lg-3" id = "audioshare">
+					<a href="https://github.com/kedarpujara/AudioShare" target="_blank"><img src="pictures/audioshare.png"></a>
+					
 				</div>
 				<div class="col-lg-8">
-						<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+					<p>
+					As an avid music fan, I was disappointed that there was no way to share music that I liked with my friends or to find out what kind of music my friends were listening to. This inspired me to create AudioShare, an iOS application where users can create a profile and share music they've been listening to recently. Their followers can like, comment, and share songs that you post and you can do the same to all the friends you follow. AudioShare was written entirely in Swift and the user datas are stored in a Parse server using an EC2 instance on AWS. Click on the logo to check out my project on Github. 
+					</p>
 					
 				</div>
 			<div class="row">
-				<div class="col-lg-3">
-					<h2>GE.DU</h2>
+				<div class="col-lg-3" style="padding-left: 30px;">
+					<a href="https://github.com/kedarpujara/GE.DU" target="_blank"><img src="pictures/gedu.png"></a>
 				</div>
-				<div class="col-lg-8">
-						<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				<div class="col-lg-8" style="padding-left: 21px; padding-top: 20px;">
+					<p>
+					GE.DU is an Android application created to help young students to master their geometry skills. Users can create accounts to help keep track of 
+					their progress. The app presents lessons to help students learn new material. After students have read the lesson, they are presented with a quiz
+					to test their mastery of the material. 
+					</p>
 					
 				</div>
 
 				
 			</div>
 		</section>
+	<hr id="Extracirriculars">
 	</div>
 
-	<hr>
-
-	<!-- Test to check if col-lg was working correctly 
-
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-4">
-				<h3>Basketball</h3>
-			</div>
-			
-			<div class="col-lg-8">
-				<p>I love basketball with passion</p>
-			</div>
-		</div>
-	</div>
 	
-	-->
 
 
 
-	<div class="container">
+	<div class="container" style="padding-top: 30px;" >
 		
-			<div class="page-header" id ="Extracirriculars">
+			<div class="page-header">
 				<h2 style="text-align: center;">Extracirriculars</h2>
 				<!--<small>Here are few things I am involved in and how I spend my free time</small>-->
 			</div>
 
 			<div class="row">
-				<div class="col-lg-4" style="text-align: center;">
+				<div class="col-lg-4" style="text-align: center; align-content: center; align-items: center;">
 					<h3> Basketball</h3>
-					<img style="padding-bottom: 40px; padding-left: 20px;" src="pictures/warriors.jpg" class="img-responsive" alt="image">
+					<img style="padding-bottom: 40px; align-items: center; align-content: center" src="pictures/warriors.jpg" class="img-responsive" alt="image">
 				</div>
 				
 				<div class="col-lg-8">	
@@ -221,7 +199,7 @@
 	<hr>			
 				<div class="container" id="ContactMe">
 					<div class="row">
-						<h4 style="text-align: center">Contact Me</h4>
+						<h3 style="text-align: center">Contact Me</h3>
 					</div>
 					<div class="row">
 					<div style="text-align: center; padding-bottom: 30px; "   class="col-lg-12">
